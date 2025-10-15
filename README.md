@@ -69,7 +69,7 @@ from sklearn.metrics import classification_report, confusion_matrix, ConfusionMa
 
 The project follows a structured workflow designed to isolate the impact of each data-handling strategy:
 
-1.  **Data Preparation**: The dataset is loaded, and 5-10% of values in 2-3 numerical columns are replaced with `NaN` to simulate a real-world missing data problem.
+1.  **Data Preparation**: The dataset is loaded, and 5% of values in 3 numerical columns (['AGE', 'BILL_AMT1', 'BILL_AMT2']) are replaced with `NaN` to simulate a real-world missing data problem.
 2.  **Imputation Strategies**:
     * **Dataset A (Baseline)**: Missing values are filled using the column's **median**.
     * **Dataset B (Linear)**: A **Linear Regression** model is used to predict and fill missing values based on other features.
